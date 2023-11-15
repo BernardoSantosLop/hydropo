@@ -1,0 +1,43 @@
+/* src/styles.css o src/styles.scss */
+
+body {
+    margin:  0;
+    padding: 0;
+  }
+  .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black; /* Puedes utilizar 'bg-black' de Tailwind CSS aquí también */
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    min-height: 20vh;
+
+
+  }
+  .app-conteiner {
+    /* Puedes usar el nombre de la clase que prefieras para tu contenedor principal */
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black; /* Puedes utilizar 'bg-black' de Tailwind CSS aquí también */
+    color: white; 
+    max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto;   /* Centra el contenedor en la página */
+    padding: 20px;     /* Añade relleno alrededor del contenido */
+    border: 6px solid #ccc; /* Añade un borde al contenedor */
+    border-radius: 0.5%;
+
+  }
+
+  .sensor-name {
+    margin-top: 16px; /* Ajusta el margen según sea necesario */
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .app-body {
+    background-color: black;
+    min-height: 100vh;
+  }
