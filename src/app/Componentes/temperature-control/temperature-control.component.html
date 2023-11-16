@@ -1,0 +1,14 @@
+<!-- src/app/temperature-control/temperature-control.component.html -->
+
+<div>
+    <input
+      type="range"
+      id="temperature"
+      [(ngModel)]="temperature"
+      min="1"
+      max="100"
+      (input)="onTemperatureChange()"
+    >
+    <span>{{ temperature }}°C</span>
+  </div>
+  

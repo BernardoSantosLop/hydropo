@@ -9,7 +9,8 @@ import { PhSensorComponent } from './Componentes/ph-sensor/ph-sensor.component';
 import { HumiditySensorComponent } from './Componentes/humidity-sensor/humidity-sensor.component';
 import { UltrasonicSensorComponent } from './Componentes/ultrasonic-sensor/ultrasonic-sensor.component';
 import { LightSwitchComponent } from './Componentes/light-switch/light-switch.component';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
+import { TemperatureControlComponent } from './Componentes/temperature-control/temperature-control.component'; 
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     PhSensorComponent,
     HumiditySensorComponent,
     UltrasonicSensorComponent,
-    LightSwitchComponent
+    LightSwitchComponent,
+    TemperatureControlComponent
   ],
   imports: [
     BrowserModule,

@@ -1,25 +1,29 @@
-<div class="app-body">
-  <h1 class="titulo">Sensores</h1>
-  <div class="app-conteiner">
-    <div class="mr-10 mt-6 h-60">
-      <app-temperature-sensor [temperature]="23"> </app-temperature-sensor>
-      <div class="sensor-name text-center">Temperatura</div>
-    </div>
-    <div class="mr-10 mt-6 h-60">
-      <app-ph-sensor [ph]="23"> </app-ph-sensor>
-      <div class="sensor-name text-center">Ph</div>
-    </div>
-    <div class="mr-10 mt-6 h-60">
-      <app-humidity-sensor [hr]="23"> </app-humidity-sensor>
-      <div class="sensor-name text-center">Humedad</div>
-    </div>
-    <div class="mt-6 h-60">
-      <app-ultrasonic-sensor [cm]="23"> </app-ultrasonic-sensor>
-      <div class="sensor-name text-center">Altura</div>
-    </div>
+
+<aside
+>
+  <div class="h-full px-6 py-7 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+     <h2 class="text-center text-white font-bold text-xl">Sensores</h2>
   </div>
-  <div class="mt-6 app-container flex items-center justify-center flex-col">
-    <app-light-switch></app-light-switch>
-    <div class="mt-4 font-semibold text-white text-center">LEDS</div>
+</aside>
+<div class="flex justify-center mt-6">
+  <div class="mr-10 mt-6 h-60">
+    <app-temperature-sensor  [temperature]="23"> </app-temperature-sensor>
+    <div class="sensor-name text-center ">Temperatura</div>
   </div>
+  <div class="mr-10 mt-6 h-60">
+    <app-ph-sensor [ph]="23"> </app-ph-sensor>
+    <div class="sensor-name text-center">Ph</div>
+  </div>
+  <div class="mr-10 mt-6 h-60">
+    <app-humidity-sensor [hr]="23"> </app-humidity-sensor>
+    <div class="sensor-name text-center">Humedad</div>
+  </div>
+  <div class="mt-6 h-60">
+    <app-ultrasonic-sensor [cm]="23"> </app-ultrasonic-sensor>
+    <div class="sensor-name text-center">Altura</div>
+  </div>
+</div>
+<div class="mt-6 app-container flex items-center justify-center flex-col">
+  <app-light-switch></app-light-switch>
+  <div class="mt-4 font-semibold text-black text-center">LEDS</div>
 </div>
