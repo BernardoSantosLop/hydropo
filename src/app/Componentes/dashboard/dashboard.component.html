@@ -1,20 +1,18 @@
-
-<aside
->
+<aside>
   <div class="h-full px-6 py-7 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-     <h2 class="text-center text-white font-bold text-xl">Sensores</h2>
+    <h2 class="text-center text-white font-bold text-xl">Sensores</h2>
   </div>
 </aside>
-<div class="flex justify-center mt-6">
-  <div class="mr-10 mt-6 h-60">
-    <app-temperature-sensor  [temperature]="23"> </app-temperature-sensor>
-    <div class="sensor-name text-center ">Temperatura</div>
+<div class="flex flex-wrap justify-center mt-6 md:space-x-20 w-full">
+  <div class="mt-6 h-60">
+    <app-temperature-sensor [temperature]="23"> </app-temperature-sensor>
+    <div class="sensor-name text-center">Temperatura</div>
   </div>
-  <div class="mr-10 mt-6 h-60">
+  <div class="mt-6 h-60">
     <app-ph-sensor [ph]="23"> </app-ph-sensor>
     <div class="sensor-name text-center">Ph</div>
   </div>
-  <div class="mr-10 mt-6 h-60">
+  <div class="mt-6 h-60">
     <app-humidity-sensor [hr]="23"> </app-humidity-sensor>
     <div class="sensor-name text-center">Humedad</div>
   </div>
