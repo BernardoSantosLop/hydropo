@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+onTemperatureChange: any;
+onPhChange: any;
+onHumidityChange: any;
 
   constructor() { }
 
   ngOnInit(): void {
-    // Lógica de inicialización si es necesario
   }
 
 }

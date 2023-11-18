@@ -1,0 +1,15 @@
+/* src/app/ph-input/ph-input.component.css */
+
+label {
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: 100px; /* Ajusta el ancho según tus necesidades */
+  }
+  
+  span {
+    margin-top: 8px;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,16 @@
+<!-- src/app/humidity-control/humidity-control.component.html -->
+
+<div class="flex flex-col items-center">
+    <label for="humidityInput">Humedad:</label>
+    <input
+      type="range"
+      id="humidityInput"
+      [(ngModel)]="humidity"
+      (input)="onHumidityChange()"
+      min="0"
+      max="100"
+      class="mb-2"
+    >
+    <span>{{ humidity }}%</span>
+  </div>
+  

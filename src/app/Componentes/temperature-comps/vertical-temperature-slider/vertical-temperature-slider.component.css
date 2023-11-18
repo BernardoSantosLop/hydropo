@@ -1,0 +1,14 @@
+/* src/app/humidity-control/humidity-control.component.css */
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+}
+
+span {
+  margin-top: 8px;
+  font-weight: bold;
+}

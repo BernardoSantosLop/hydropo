@@ -5,7 +5,8 @@
 </aside>
 <div class="flex flex-wrap justify-center mt-6 md:space-x-20 w-full">
   <div class="mt-6 h-60">
-    <app-temperature-sensor [temperature]="23"> </app-temperature-sensor>
+    <app-temperature-sensor [temperature]="23">
+     </app-temperature-sensor>
     <div class="sensor-name text-center">Temperatura</div>
   </div>
   <div class="mt-6 h-60">
@@ -25,3 +26,16 @@
   <app-light-switch></app-light-switch>
   <div class="mt-4 font-semibold text-black text-center">LEDS</div>
 </div>
+<aside>
+  <div class="mt-6 h-full px-6 py-7 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+    <h2 class="text-center text-white font-bold text-xl">Controles</h2>
+  </div>
+</aside>
+<div class="flex flex-wrap justify-center mt-6 md:space-x-40 w-full">
+  <app-vertical-temperature-slider [temperature]="25" (temperatureChange)="onTemperatureChange($event)"></app-vertical-temperature-slider>
+  <app-ph-input [phValue]="7" (phChange)="onPhChange($event)"></app-ph-input>
+  <app-humidity-control [humidity]="50" (humidityChange)="onHumidityChange($event)"></app-humidity-control>
+</div>
+
+
+
